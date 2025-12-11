@@ -109,7 +109,7 @@ resource "aws_eks_node_group" "devopsshack" {
   }
 
   instance_types = ["t3.medium"]
-  ami_type = "AL2_x86_64"
+  ami_type = "CUSTOM"
 
   remote_access {
     ec2_ssh_key = var.ssh_key_name
